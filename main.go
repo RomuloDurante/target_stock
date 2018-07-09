@@ -1,8 +1,6 @@
 package main
 
 import (
-	"fmt"
-
 	"github.com/RomuloDurante/target_stock/stock"
 )
 
@@ -15,7 +13,6 @@ func main() {
 	// -> calc = acao aponta o endereço da memoria para a interface poder usa-lo
 
 	calc = stock.CreateStock("Ross", 86.32, 3.58, 3.01, 22.42, 0.64, 17.88)
-
-	fmt.Println(calc) // pointer to stock object
-	calc.ProcessStock()
+	// fmt.Println(calc) // pointer to stock object
+	calc.ProcessStock(15)
 }

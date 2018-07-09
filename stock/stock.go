@@ -22,6 +22,6 @@ func CreateStock(name string, price, eps, tenYearsEps, peRatio, dividend, payout
 		epsgrowth:   (eps*100)/tenYearsEps - 100,
 		peRatio:     peRatio,
 		dividend:    dividend,
-		payout:      payout,
+		payout:      payout / 100,
 	}
 }
